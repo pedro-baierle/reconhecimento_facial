@@ -4,13 +4,12 @@ import time
 
 #########################################################
 
-eu  = face_recognition.load_image_file("/home/pedro/Documents/fotos_reconhecimento/eu_1.jpg")
-mae = face_recognition.load_image_file("/home/pedro/Documents/fotos_reconhecimento/mae_1.jpg")
+eu  = face_recognition.load_image_file("/home/reconhecimento_facial/eu_1.jpg")
+
 
 eu_encoding = face_recognition.face_encodings(eu)[0]
-mae_encoding = face_recognition.face_encodings(mae)[0]
-faces_conhecidas = [eu_encoding, mae_encoding]
-known_face_names = ['Pedro', 'Gladis']
+faces_conhecidas = [eu_encoding]
+known_face_names = ['Pedro']
 
 ############################################################
 
